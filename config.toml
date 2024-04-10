@@ -1,0 +1,16 @@
+hw2_path = "Input your path"
+files = [
+  "Makefile",
+  "cover.ml",
+  "dune",
+  "dune-project",
+  "smt.ml",
+  "utils.ml",
+]
+
+cases = 1000
+
+min_sets = 1
+max_sets = 20
+min_elem = 1
+max_elem = 20
