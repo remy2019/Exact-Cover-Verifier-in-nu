@@ -16,6 +16,8 @@ if ("datasets.ml" | path exists) {
 let data = (1..$env.cases) | each { |i|
   let set = do $sat
   let strings = do $gen_sets $i $set
+  print $"generating data: ($i | into string)"
+  print $strings
   [$set $strings]
 }
 let payload = $data | each { |i|
