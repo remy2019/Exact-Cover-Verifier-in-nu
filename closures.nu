@@ -31,7 +31,7 @@ let gen_guaranteed = { |bits: int, x: int|
 }
 
 # 보장되는 경우: UNSAT 나오면 틀림  SAT 나오면 확인(다른 답이 생길 수 있음)
-let sat = { |_|
+let sat = { ||
     let elem = random int $env.min_elem..$env.max_elem
     let sets = random int $env.min_sets..$env.max_sets
 
