@@ -80,7 +80,7 @@ let gen_sets = { |index: int, set|
 let create_main_ml = { |n: int|
   let dep = ["open Utils" "open Cover" "open Datasets"]
   let cargo = (1..$n) | each { |i|
-    $"let _ = print_endline \(string_of_list string_of_int \(solve \(encode datasets($i))))"
+    $"let _ = print_endline \(string_of_list string_of_int \(cover \(datasets($i))))"
   }
   $dep | append $cargo | str join (char newline)
 }
